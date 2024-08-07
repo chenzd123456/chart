@@ -1,1 +1,18 @@
-@import './tailwind.css';
+.fullscreen {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}

@@ -15,10 +15,19 @@ const chart_canvas_ref = ref()
 let chart
 
 onMounted(() => {
-  chart = new Chart(chart_canvas_ref.value, props.config)
+  initChart()
 })
 
 onUpdated(() => {
-  chart.resize()
+  updateChart()
 })
+
+const initChart = () => {
+  chart = new Chart(chart_canvas_ref.value, props.config)
+  console.log('ChartCanvas draw')
+}
+
+const updateChart = () => {
+  chart.update()
+}
 </script>
